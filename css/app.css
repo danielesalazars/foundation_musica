@@ -27,10 +27,40 @@ h1, h2, h3, h4, h5, h6, button{
 	background-color: #48a19d;
 	color: #fff;
 }
-#tickets-container .callout{
+#tickets-action .callout{
 	background-color: #5e7eb7;
+	margin-bottom: 0;
 }
-#tickets-container button{
+#tickets-action button{
 	color:#fff;
 	border: 1px solid #fff;
+}
+#lineup-container,
+#lineup-tabs {
+	background-color: #9676af;
+	color: #fff;
+	border:0;
+}
+#lineup-container{
+	padding: 1em 0;
+}
+#lineup-tabs li{
+	display: inline-block;
+	float: none;
+}
+#lineup-tabs li a{
+	font-family: 'Bree Serif', serif;
+	font-size: 18px;
+	color: #a7fffb;
+	text-transform: uppercase;
+}
+#lineup-tabs li a:hover{
+	background-color: #9676af;
+	color: #fff;
+}
+#lineup-tabs li.is-active a{
+	background-color: #9676af;
+}
+#tabs-content{
+	border: none;
 }
