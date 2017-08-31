@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6, button{
 }
 #lineup-tabs li a{
 	font-family: 'Bree Serif', serif;
-	font-size: 18px;
+	font-size: 18px;#9676af
 	color: #a7fffb;
 	text-transform: uppercase;
 }
@@ -60,7 +60,15 @@ h1, h2, h3, h4, h5, h6, button{
 }
 #lineup-tabs li.is-active a{
 	background-color: #9676af;
+	color: #fff;
 }
-#tabs-content{
+.tabs-content{
+	background-color: #9676af;
 	border: none;
+}
+.orbit-container{
+	margin-bottom: 1.5em;
+}
+.tabs-content .column:nth-child(odd) figcaption{
+	text-align: right;
 }
