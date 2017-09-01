@@ -7,7 +7,8 @@
     <title>Mi primera página con Foundation</title>
     <link rel="stylesheet" href="icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/pricing-table.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -116,7 +117,7 @@
             </div>
           </div>
         </div>
-        <div class="tabs-panel is-active" id="panelSabado">
+        <div class="tabs-panel" id="panelSabado">
           <div class="row">
             <div class="small-12 medium-6 column">
               <div class="orbit" data-orbit>
@@ -148,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="tabs-panel is-active" id="panelDomingo">
+        <div class="tabs-panel" id="panelDomingo">
           <div class="row">
             <div class="small-12 medium-6 column">
               <div class="orbit" data-orbit>
@@ -183,6 +184,44 @@
       </div>
     </section>
     <!-- Lineup -->
+
+    <!-- Compra de boletos -->
+    <section id="tickets-container">
+      <h3 class="text-center">Compra de boletos</h3>
+      <div class="row" data-equalizer>
+        <div class="small-10 small-offset-1 medium-6 medium-offset-3 column">
+          <ul class="pricing-table">
+            <li class="title">Platinium</li>
+            <li class="price">$99.99</li>
+            <li class="description">An awesome description</li>
+            <li>42 Rad Features</li>
+            <li>7GB of Power</li>
+            <li><a class="button" href="#">Buy Now</a></li>
+          </ul>
+        </div>
+        <div class="small-6 medium-6 column">
+          <ul class="pricing-table">
+            <li class="title">Gold</li>
+            <li class="price">$99.99</li>
+            <li class="description" data-equalizer-watch>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>42 Rad Features</li>
+            <li>7GB of Power</li>
+            <li><a class="button" href="#">Buy Now</a></li>
+          </ul>
+        </div>
+        <div class="small-6 medium-6 column">
+          <ul class="pricing-table">
+            <li class="title">Silver</li>
+            <li class="price">$99.99</li>
+            <li class="description" data-equalizer-watch>An awesome description</li>
+            <li>42 Rad Features</li>
+            <li>7GB of Power</li>
+            <li><a class="button" href="#">Buy Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Compra de boletos -->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

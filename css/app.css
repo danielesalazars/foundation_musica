@@ -72,3 +72,17 @@ h1, h2, h3, h4, h5, h6, button{
 .tabs-content .column:nth-child(odd) figcaption{
 	text-align: right;
 }
+#tickets-container{
+	background-color: #f6e15f;
+	color: #161742;
+	padding: 1em 0;
+}
+.pricing-table{
+	font-family: 'Oswald', sans-serif;
+	margin: 0 0 15px 0;
+}
+.pricing-table li{
+	font-size: 20px;
+}
+.pricing-table li.title{
+	font-size: 30px;
