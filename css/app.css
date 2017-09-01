@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6, button{
 }
 .orbit-container{
 	margin-bottom: 1.5em;
+	height: auto;
 }
 .tabs-content .column:nth-child(odd) figcaption{
 	text-align: right;
@@ -86,3 +87,4 @@ h1, h2, h3, h4, h5, h6, button{
 }
 .pricing-table li.title{
 	font-size: 30px;
+}
