@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6, button{
 .pricing-table li.title{
 	font-size: 30px;
 }
+.pricing-table li a{
+	font-family: 'Bree Serif', serif !important;
+}
 #info-container{
 	background-color: #161742;
 	color: #fff;
@@ -95,4 +98,15 @@ h1, h2, h3, h4, h5, h6, button{
 }
 #info-container .info-map iframe{
 	width: 100%;	
+}
+#suscribete-container{
+	background-color: #ee3f54;
+	color: #fff;
+	padding: 1em 0;
+}
+#suscribete-container h4 small{
+	color: #ffcddc;
+}
+.error_form{
+	font-size: 0.8em;
 }
