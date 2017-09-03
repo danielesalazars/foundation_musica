@@ -12,232 +12,266 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- Social -->
-    <section id="social-container">
-      <div class="row align-center text-center">
-        <div class="column small-1">
-          <a href="#" target="_blank">
-            <i class="fi-social-facebook"></i>
-          </a>
-        </div>
-        <div class="column small-1">
-          <a href="#" target="_blank">
-            <i class="fi-social-twitter"></i>
-          </a>
-        </div>
-        <div class="column small-1">
-          <a href="#" target="_blank">
-            <i class="fi-social-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- Social -->
-
-    <!-- Logo -->
-    <section id="logo-container">
-      <div class="callout text-center">
-        <h1>Foundation</h1>
-      </div>
-    </section>
-    <!-- Logo -->
     
-    <!-- Menu -->
-    <section id="scrollSticky" data-sticky-container>
-      <div class="data-stycky" data-sticky data-options="marginTop:0" data-sticky-on="small" data-top-anchor="scrollSticky">
-        <nav id="menu-container" data-magellan>
-          <ul class="menu dropdown align-spaced" data-dropdown-menu>
-            <li><a href="#tickets-container">Tickets</a></li>
-            <li>
-              <a href="#lineup-container">Lineup</a>
-              <ul id="submenu-container" class="menu">
-                <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
-                <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
-                <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
-              </ul>
-            </li>
-            <li><a href="#info-container">Info</a></li>
-            <li><a href="#suscribete-container">Suscríbete</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- Menu -->
+    <!-- offCanvas -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <!-- offCanvasMenu -->
+        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+          <nav data-magellan>
+            <ul class="vertical menu">
+              <li><a href="#tickets-container">Tickets</a></li>
+              <li>
+                <a href="#lineup-container">Lineup</a>
+                <ul id="submenu-container" class="menu">
+                  <!-- <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                  <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
+                  <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#info-container">Info</a></li>
+              <li><a href="#suscribete-container">Suscríbete</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- offCanvasMenu -->
 
-    <!-- Tickets -->
-    <section id="tickets-action" data-magellan-target="tickets-action">
-      <div class="callout large text-center">
-        <a href="#">
-          <button class="large hollow button">Comprar boletos</button>        
-        </a>
-      </div>
-    </section>
-    <!-- Tickets -->
+        <!-- offCanvasContent -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- Social -->
+          <section id="social-container">
+            <div class="row align-center text-center">
+              <div class="column small-1">
+                <a href="#" target="_blank">
+                  <i class="fi-social-facebook"></i>
+                </a>
+              </div>
+              <div class="column small-1">
+                <a href="#" target="_blank">
+                  <i class="fi-social-twitter"></i>
+                </a>
+              </div>
+              <div class="column small-1">
+                <a href="#" target="_blank">
+                  <i class="fi-social-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- Social -->
 
-    <!-- Lineup -->
-    <section id="lineup-container" data-magellan-target="lineup-action">
-      <h3 class="text-center">Lineup</h3>
-      <ul id="lineup-tabs" class="tabs text-center" data-tabs>
-        <li class="tabs-title is-active">
-          <a href="#panelViernes">Viernes</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelSabado">Sábado</a>
-        </li>
-        <li class="tabs-title">
-          <a href="#panelDomingo">Domingo</a>
-        </li>
-      </ul>
-      <div class="tabs-content" data-tabs-content="lineup-tabs">
-        <div class="tabs-panel is-active" id="panelViernes">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://www.metro951.com/wp-content/uploads/2015/08/guns_n_roses.jpg" alt="Guns N' Rose">
-                    <figcaption class="orbit-caption">Guns N' Rose</figcaption>
-                  </figure>
-                </div>
-              </div>
+          <!-- Logo -->
+          <section id="logo-container">
+            <div class="callout text-center">
+              <h1>Foundation</h1>
             </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://www.metro951.com/wp-content/uploads/2015/08/guns_n_roses.jpg" alt="Guns N' Rose">
-                    <figcaption class="orbit-caption">Guns N' Rose</figcaption>
-                  </figure>
-                </div>
-              </div>
+          </section>
+          <!-- Logo -->
+          
+          <!-- Menu -->
+          <section id="scrollSticky" data-sticky-container>
+            <div class="data-stycky" data-sticky data-options="marginTop:0" data-sticky-on="small" data-top-anchor="scrollSticky">
+              <nav id="menu-container" data-magellan>
+                <ul class="menu align-spaced show-for-small-only">
+                  <li><a href="#" data-toggle="offCanvas">Menú</a></li>
+                </ul>
+                <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                  <li><a href="#tickets-container">Tickets</a></li>
+                  <li>
+                    <a href="#lineup-container">Lineup</a>
+                    <ul id="submenu-container" class="menu">
+                      <li><a data-toggle-dia="panelViernes" href="#lineup-container">Viernes</a></li>
+                      <li><a data-toggle-dia="panelSabado" href="#lineup-container">Sábado</a></li>
+                      <li><a data-toggle-dia="panelDomingo" href="#lineup-container">Domingo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#info-container">Info</a></li>
+                  <li><a href="#suscribete-container">Suscríbete</a></li>
+                </ul>
+              </nav>
             </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelSabado">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://www.billboard.com/files/styles/article_main_image/public/media/linkin-park-billboard-650.jpg" alt="Linkin Park">
-                    <figcaption class="orbit-caption">Linkin Park</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://www.billboard.com/files/styles/article_main_image/public/media/linkin-park-billboard-650.jpg" alt="Linkin Park">
-                    <figcaption class="orbit-caption">Linkin Park</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabs-panel" id="panelDomingo">
-          <div class="row">
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://sss.ritmoromantica.com/imagen/apaisado/alejandro-sanz-fab14.jpg" alt="Alejandro Sanz">
-                    <figcaption class="orbit-caption">Alejandro Sanz</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="small-12 medium-6 column">
-              <div class="orbit-container">
-                <div class="orbit-slide">
-                  <figure class="orbit-figure">
-                    <img class="orbit-image" src="http://sss.ritmoromantica.com/imagen/apaisado/alejandro-sanz-fab14.jpg" alt="Alejandro Sanz">
-                    <figcaption class="orbit-caption">Alejandro Sanz</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Lineup -->
+          </section>
+          <!-- Menu -->
 
-    <!-- Compra de boletos -->
-    <section id="tickets-container" data-magellan-target="tickets-container">
-      <h3 class="text-center">Compra de boletos</h3>
-      <div class="row" data-equalizer>
-        <div class="small-10 small-offset-1 medium-6 medium-offset-3 column">
-          <ul class="pricing-table">
-            <li class="title">Platinium</li>
-            <li class="price">$99.99</li>
-            <li class="description">An awesome description</li>
-            <li>42 Rad Features</li>
-            <li>7GB of Power</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-        <div class="small-6 medium-6 column">
-          <ul class="pricing-table">
-            <li class="title">Gold</li>
-            <li class="price">$99.99</li>
-            <li class="description" data-equalizer-watch>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>42 Rad Features</li>
-            <li>7GB of Power</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-        <div class="small-6 medium-6 column">
-          <ul class="pricing-table">
-            <li class="title">Silver</li>
-            <li class="price">$99.99</li>
-            <li class="description" data-equalizer-watch>An awesome description</li>
-            <li>42 Rad Features</li>
-            <li>7GB of Power</li>
-            <li><a class="button" href="#">Buy Now</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <!-- Compra de boletos -->
+          <!-- Tickets -->
+          <section id="tickets-action" data-magellan-target="tickets-action">
+            <div class="callout large text-center">
+              <a href="#">
+                <button class="large hollow button">Comprar boletos</button>        
+              </a>
+            </div>
+          </section>
+          <!-- Tickets -->
 
-    <!-- Suscribete -->
-    <section id="suscribete-container" data-magellan-target="suscribete-action">
-      <h3 class="text-center">Suscríbete</h3>
-      <h4 class="text-center">
-        <small>Y recibe las últimas novedades del concierto</small>
-        <form action="" method="" novalidate data-abide>
-          <div data-abide-error class="row column small-12 medium-6 text-center error_form" style="display:none;">
-            <p>
-              <i class="fi-alert"></i>
-              Ingreso un correo electrónico no valido!
-            </p>
-          </div>
-          <div class="row column small-12 medium-6">
-            <div class="input-group">
-              <label for="" class="input-group-label">
-                <i class="fi-mail"></i>
-              </label>
-              <input type="email" class="input-group-field" placeholder="tu@correo.com" required>
-              <div class="input-group-button">
-                <input class="button" type="submit" value="Suscríbete!">  
+          <!-- Lineup -->
+          <section id="lineup-container" data-magellan-target="lineup-action">
+            <h3 class="text-center">Lineup</h3>
+            <ul id="lineup-tabs" class="tabs text-center" data-tabs>
+              <li class="tabs-title is-active">
+                <a href="#panelViernes">Viernes</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelSabado">Sábado</a>
+              </li>
+              <li class="tabs-title">
+                <a href="#panelDomingo">Domingo</a>
+              </li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="lineup-tabs">
+              <div class="tabs-panel is-active" id="panelViernes">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://www.metro951.com/wp-content/uploads/2015/08/guns_n_roses.jpg" alt="Guns N' Rose">
+                          <figcaption class="orbit-caption">Guns N' Rose</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://www.metro951.com/wp-content/uploads/2015/08/guns_n_roses.jpg" alt="Guns N' Rose">
+                          <figcaption class="orbit-caption">Guns N' Rose</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelSabado">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://www.billboard.com/files/styles/article_main_image/public/media/linkin-park-billboard-650.jpg" alt="Linkin Park">
+                          <figcaption class="orbit-caption">Linkin Park</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://www.billboard.com/files/styles/article_main_image/public/media/linkin-park-billboard-650.jpg" alt="Linkin Park">
+                          <figcaption class="orbit-caption">Linkin Park</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-panel" id="panelDomingo">
+                <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://sss.ritmoromantica.com/imagen/apaisado/alejandro-sanz-fab14.jpg" alt="Alejandro Sanz">
+                          <figcaption class="orbit-caption">Alejandro Sanz</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-container">
+                      <div class="orbit-slide">
+                        <figure class="orbit-figure">
+                          <img class="orbit-image" src="http://sss.ritmoromantica.com/imagen/apaisado/alejandro-sanz-fab14.jpg" alt="Alejandro Sanz">
+                          <figcaption class="orbit-caption">Alejandro Sanz</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </h4>
-    </section>
-    <!-- Suscribete -->
+          </section>
+          <!-- Lineup -->
 
-    <!-- Info -->
-    <section id="info-container" data-magellan-target="info-action">
-      <h3 class="text-center">Información</h3>
-      <div class="info-map" data-interchange="[assets/mapa-small.html, small], [assets/mapa.html, medium]">
+          <!-- Compra de boletos -->
+          <section id="tickets-container" data-magellan-target="tickets-container">
+            <h3 class="text-center">Compra de boletos</h3>
+            <div class="row" data-equalizer>
+              <div class="small-10 small-offset-1 medium-6 medium-offset-3 column">
+                <ul class="pricing-table">
+                  <li class="title">Platinium</li>
+                  <li class="price">$99.99</li>
+                  <li class="description">An awesome description</li>
+                  <li>42 Rad Features</li>
+                  <li>7GB of Power</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+              <div class="small-6 medium-6 column">
+                <ul class="pricing-table">
+                  <li class="title">Gold</li>
+                  <li class="price">$99.99</li>
+                  <li class="description" data-equalizer-watch>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                  <li>42 Rad Features</li>
+                  <li>7GB of Power</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+              <div class="small-6 medium-6 column">
+                <ul class="pricing-table">
+                  <li class="title">Silver</li>
+                  <li class="price">$99.99</li>
+                  <li class="description" data-equalizer-watch>An awesome description</li>
+                  <li>42 Rad Features</li>
+                  <li>7GB of Power</li>
+                  <li><a class="button" href="#">Buy Now</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- Compra de boletos -->
+
+          <!-- Suscribete -->
+          <section id="suscribete-container" data-magellan-target="suscribete-action">
+            <h3 class="text-center">Suscríbete</h3>
+            <h4 class="text-center">
+              <small>Y recibe las últimas novedades del concierto</small>
+              <form action="" method="" novalidate data-abide>
+                <div data-abide-error class="row column small-12 medium-6 text-center error_form" style="display:none;">
+                  <p>
+                    <i class="fi-alert"></i>
+                    Ingreso un correo electrónico no valido!
+                  </p>
+                </div>
+                <div class="row column small-12 medium-6">
+                  <div class="input-group">
+                    <label for="mail" class="input-group-label">
+                      <i class="fi-mail"></i>
+                    </label>
+                    <input type="email" class="input-group-field" placeholder="tu@correo.com" required>
+                    <div class="input-group-button">
+                      <input class="button" type="submit" value="Suscríbete!">  
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </h4>
+          </section>
+          <!-- Suscribete -->
+
+          <!-- Info -->
+          <section id="info-container" data-magellan-target="info-action">
+            <h3 class="text-center">Información</h3>
+            <div class="info-map" data-interchange="[assets/mapa-small.html, small], [assets/mapa.html, medium]">
+            </div>
+          </section>
+          <!-- Info -->
+        </div>
+        <!-- offCanvasContent -->
       </div>
-    </section>
-    <!-- Info -->
+    </div>
+    <!-- offCanvas -->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

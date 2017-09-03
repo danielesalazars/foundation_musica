@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6, button{
 #menu-container li a{
 	color: #fff;
 	font-family: 'Bree Serif', serif;
+	text-transform: uppercase;
 }
 #menu-container li a:hover,
 #submenu-container li a{
@@ -109,4 +110,12 @@ h1, h2, h3, h4, h5, h6, button{
 }
 .error_form{
 	font-size: 0.8em;
+}
+#offCanvas{
+	background-color: #000;
+	font-family: 'Bree Serif', serif;
+}
+
+#offCanvas li a{
+	color: #fff;
 }
