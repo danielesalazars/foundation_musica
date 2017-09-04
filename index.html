@@ -73,7 +73,7 @@
             <div class="data-stycky" data-sticky data-options="marginTop:0" data-sticky-on="small" data-top-anchor="scrollSticky">
               <nav id="menu-container" data-magellan>
                 <ul class="menu align-spaced show-for-small-only">
-                  <li><a href="#" data-toggle="offCanvas">Menú</a></li>
+                  <li><a data-toggle="offCanvas">Menú</a></li>
                 </ul>
                 <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
                   <li><a href="#tickets-container">Tickets</a></li>
@@ -237,7 +237,7 @@
             <h3 class="text-center">Suscríbete</h3>
             <h4 class="text-center">
               <small>Y recibe las últimas novedades del concierto</small>
-              <form action="" method="" novalidate data-abide>
+              <form action="https://formspree.io/daniel.esalazars@gmail.com" method="POST" novalidate data-abide>
                 <div data-abide-error class="row column small-12 medium-6 text-center error_form" style="display:none;">
                   <p>
                     <i class="fi-alert"></i>
@@ -249,7 +249,7 @@
                     <label for="mail" class="input-group-label">
                       <i class="fi-mail"></i>
                     </label>
-                    <input type="email" class="input-group-field" placeholder="tu@correo.com" required>
+                    <input type="email" name="mail" class="input-group-field" placeholder="tu@correo.com" required>
                     <div class="input-group-button">
                       <input class="button" type="submit" value="Suscríbete!">  
                     </div>
